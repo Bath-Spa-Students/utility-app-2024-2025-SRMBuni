@@ -32,7 +32,7 @@ while True:
     except ValueError:
         print("\nInvalid input! Please enter a numeric value.")
 
-while balance > 0:
+while balance > 0.98:
     # Displays the menu
     display_menu(menu_item)
 
@@ -64,7 +64,7 @@ while balance > 0:
         continue
 
     # Prompts user to continue shopping
-    if balance > 0:
+    if balance > 0.98:
         continue_choice = input("\nWould you like to buy another item? (yes/no): ").lower()
         if continue_choice != "yes":
             print(f"\n- - - Thank you for purchasing! Your change is ${balance:.2f}. - - -")
